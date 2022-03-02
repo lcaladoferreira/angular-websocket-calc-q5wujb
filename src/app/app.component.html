@@ -1,0 +1,79 @@
+
+<hello name="{{ name }}"></hello>
+<p>
+  Do some calculations see some magic happen :)
+</p>
+
+<div class="container border container-calc">
+  <div class="row row-disp">
+    <div class="col-12">
+      <input type="text" class="form-control" style="width:100%;border-radius:25px;font-size:60px;" value="{{curVal}}" readonly/>
+    </div>
+  </div>
+
+  <div class="row num-row">
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(1)">1</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(2)">2</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(3)">3</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-secondary btn-calc" (click)="div()">/</button>
+    </div>
+  </div>
+
+  <div class="row num-row ">
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(4)">4</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(5)">5</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(6)">6</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-secondary btn-calc" (click)="mult()">*</button>
+    </div>
+  </div>
+
+  <div class="row num-row">
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(7)">7</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(8)">8</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(9)">9</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-secondary btn-calc" (click)="add()">+</button>
+    </div>
+  </div>
+
+  <div class="row num-row">
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-secondary btn-calc" (click)="neg()">+/-</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-primary btn-calc" (click)="numPressed(0)">0</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-danger btn-calc" (click)="clear()">C</button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-block btn-secondary btn-calc" (click)="sub()">-</button>
+    </div>
+  </div>
+
+  <div class="row num-row justify-content-end ">
+    <div class="col-12">
+      <button type="button" class="btn btn-block btn-secondary btn-eq" (click)="evaluate()">=</button>
+    </div>
+
+</div>

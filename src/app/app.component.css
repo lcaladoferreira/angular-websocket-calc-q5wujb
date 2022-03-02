@@ -1,0 +1,39 @@
+p {
+  font-family: Lato;
+}
+
+.num-row{
+  margin-bottom: 3%;
+}
+
+
+.btn-calc{
+  height:100%;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  border-radius:25px!important;
+  font-size:30px;
+}
+
+.btn-eq{
+  height:100%;
+  border-radius:25px!important;
+  font-size:30px;
+}
+
+[class*="col-"] {
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.row-disp{
+  margin-bottom:3%;
+  margin-top:3%;
+}
+
+.container-calc {
+  background-color: rgb(214, 214, 214);
+  border-radius:25px;
+  width:400px;
+
+}
